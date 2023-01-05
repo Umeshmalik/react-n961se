@@ -1,0 +1,111 @@
+h1,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+  height: fit-content;
+}
+
+.circles {
+  display: flex;
+  gap: 3px;
+}
+
+.circle {
+  border: 2px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  width: 300px;
+  display: flex;
+  gap: 20px;
+  height: fit-content;
+  align-items: center;
+}
+
+.submit {
+  width: 20px;
+  height: 5px;
+  position: relative;
+  margin: 15px 7px;
+  border: none;
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+.submit:before {
+  left: 6px;
+  width: 5px;
+  height: 12px;
+  border-width: 0 5px 5px 0;
+  top: 50%;
+  border-style: solid;
+  border-color: #b4bb69;
+  margin-top: -11px;
+  transform: rotate(45deg);
+  content: '';
+  position: absolute;
+}
+
+.submit:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.hint {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border: 1px solid #28222d;
+  border-radius: 50%;
+}
+
+.guess {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.current {
+  cursor: not-allowed;
+  border: #a8a8a8 1px solid;
+}
